@@ -118,10 +118,10 @@ const SalesContest = () => {
             +
           </button>
         </div>
+      </form>
         <button type="submit" className="update-btn">
           Update
         </button>
-      </form>
     </div>
   );
 };
