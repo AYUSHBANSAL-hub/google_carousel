@@ -17,12 +17,29 @@
     display: block;
     margin-bottom: 10px;
     color: #666;
+
+    display: flex;
+    align-items: center
+}
+
+.product-form label p {
+    width: 150px;
+}
+
+.product-form label input,
+.product-form label select{
+    width: 200px;
+    margin-right: 20px;
+}
+
+.imei-no input {
+    flex: 1;
 }
 
 .product-form select,
 .product-form input[type="date"],
 .product-form input[type="text"] {
-    width: 100%;
+    /* width: 100%; */
     padding: 8px;
     margin-top: 5px;
     box-sizing: border-box;
@@ -34,7 +51,21 @@
     color: #999;
 }
 
-.product-form button[type="button"],
+.product-form .product-selection {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.product-form .product-selection>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* .product-form button[type="button"],
 .product-form button[type="submit"] {
     padding: 10px 20px;
     margin-top: 10px;
@@ -49,12 +80,13 @@
 .product-form button[type="button"] {
     background-color: #f0f0f0;
     color: #333;
-    margin-right: 5px;
-}
+} */
 
 .product-form div {
     margin-top: 10px;
 }
+
+
 
 .units-sold {
     display: flex;
@@ -77,14 +109,6 @@
     margin: 0 10px;
 }
 
-.product-form .product-selection button {
-    display: inline-block;
-    margin-right: 10px;
-    border: none;
-    background: none;
-    padding: 0;
-}
-
 /* Style adjustments for focus on elements */
 input:focus, select:focus, button:focus {
     outline: none;
@@ -93,4 +117,54 @@ input:focus, select:focus, button:focus {
 
 .product-form .product-selection button:focus {
     outline: 1px solid #4CAF50;
+}
+
+
+.product-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-btn img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.counter-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.counter-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.update-btn{
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: blue;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 18px;
+    align-self: center;
+    display: block;
+    margin-inline: auto;
 }
