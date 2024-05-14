@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "./Sales_contest.css";
 const SalesContest = () => {
     const [selectedRetailer, setSelectedRetailer] = useState('');
     const [date, setDate] = useState('');

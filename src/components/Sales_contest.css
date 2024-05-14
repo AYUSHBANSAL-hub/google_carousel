@@ -1,0 +1,96 @@
+.product-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.product-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.product-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.product-form select,
+.product-form input[type="date"],
+.product-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.product-form input[type="text"]::placeholder {
+    color: #999;
+}
+
+.product-form button[type="button"],
+.product-form button[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+
+.product-form button[type="button"] {
+    background-color: #f0f0f0;
+    color: #333;
+    margin-right: 5px;
+}
+
+.product-form div {
+    margin-top: 10px;
+}
+
+.units-sold {
+    display: flex;
+    align-items: center;
+}
+
+.units-sold button {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #333;
+    border: none;
+}
+
+.units-sold span {
+    margin: 0 10px;
+}
+
+.product-form .product-selection button {
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+/* Style adjustments for focus on elements */
+input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.product-form .product-selection button:focus {
+    outline: 1px solid #4CAF50;
+}
